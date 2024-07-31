@@ -4,8 +4,11 @@
 
 {% block content %}
 <h1>Welcome to the Stock Predictor</h1>
+
+<h2>Note: I hosted my site on pythonanywhere.com because heroku wanted my credit card info.</h2><br>
+
 {% if latest_prediction %}
-    <h2>Current Prediction</h2>
+    <h2>Current Buy Recommendation</h2>
     <p><strong>Stock:</strong> {{ latest_prediction.stock_name }}</p>
     <p><strong>Predicted Price:</strong> {{ latest_prediction.predicted_price }}</p>
     <p><strong>Prediction Date:</strong> {{ latest_prediction.prediction_datetime|date:"Y-m-d H:i:s" }}</p>
