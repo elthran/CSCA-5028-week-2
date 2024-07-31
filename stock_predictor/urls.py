@@ -23,5 +23,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("predictions/", include("predictions.urls")),  # Include the app's URLs
-    path('', RedirectView.as_view(url='/predictions/', permanent=True)),  # Redirect root to predictions
+    path("", RedirectView.as_view(url="/predictions/", permanent=True)),  # Redirect root to predictions
 ]
